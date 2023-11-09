@@ -1,6 +1,6 @@
 let money = 0;
 let accountBal = [];
-
+let newTool = "";
 let tools = [
   { type: "teeth", pay: 1 },
   { type: "Rusty Scissors", pay: 5 },
@@ -18,7 +18,7 @@ function teethCut() {
   }
 }
 
-let newTool = "";
+
 
 function buySciss() {
   if (accountBal < 5) {
