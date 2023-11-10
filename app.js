@@ -16,12 +16,12 @@ let tools = [
 function teethCut() {
   if (money < 5) {
     accountBal.splice(0, 1, (money += 1));
-    console.log(`You have earned ${money} cutting lawns today!`);
+    console.log(`You have earned $${money} cutting lawns today!`);
     // alert(`You have earned ${money} cutting lawns today!`);
   }
   if (money === 5) {
     console.log(
-      `You have earned ${money} to purchase a tool to make you more productive! Proceed to the store!`
+      `You have earned $${money} to purchase a tool to make you more productive! Proceed to the store!`
     );
     // alert(
     //   `You have earned ${money} to purchase a tool to make you more productive! Proceed to the store!`
@@ -33,14 +33,14 @@ function teethCut() {
 function scissCut() {
   if (money < 25 && newTool === "rusty scissors") {
     accountBal.splice(0, 1, (money += 5));
-    console.log(`You have earned ${money}! Keep up the good work!`);
+    console.log(`You have earned $${money}! Keep up the good work!`);
     // alert(`You have earned ${money}! Keep up the good work!`);
   } else if (newTool !== "rusty scissors") {
     console.log("You don't have the tool! Get to chomping!");
     // alert("You don't have enough!")
   } else if (money === 25) {
     console.log(
-      `You have earned ${money}! Proceed to the store for a upgrade!`
+      `You have earned $${money}! Proceed to the store for a upgrade!`
       // alert(`You have earned ${money}! Proceed to the store for a upgrade!`);
     );
   }
@@ -50,14 +50,14 @@ function scissCut() {
 function olPushMow() {
   if (money < 250 && newTool === "old push-mower") {
     accountBal.splice(0, 1, (money += 50));
-    console.log(`You have earned ${money}! Keep up the good work!`);
+    console.log(`You have earned $${money}! Keep up the good work!`);
     // alert(`You have earned ${money}! Keep up the good work!`)
   } else if (newTool !== "old push-mower") {
     console.log("You don't have the tool! Keep on clipping!");
     //alert("You don't have the tool! Keep on clipping!");
   } else if (money === 250) {
     console.log(
-      `You have earned ${money}! Proceed to the store for a upgrade!`
+      `You have earned $${money}! Proceed to the store for a upgrade!`
     );
     // alert(`You have earned ${money}! Proceed to the store for a upgrade!`)
   }
@@ -68,7 +68,7 @@ function olPushMow() {
 // buy scissors function
 function buySciss() {
   if (accountBal < 5) {
-    console.log(`You only have ${accountBal}, Get back to work!`);
+    console.log(`You only have $${accountBal}, Get back to work!`);
     // alert(`You only have ${accountBal}, Get back to work!`);
   } else if (accountBal >= 5) {
     document.getElementById("scissors");
@@ -82,7 +82,7 @@ function buySciss() {
 // buy old push-mower
 function buyOlMow() {
   if (accountBal < 25) {
-    console.log(`You only have ${accountBal}, Get back to work!`);
+    console.log(`You only have $${accountBal}, Get back to work!`);
     // alert(`You only have ${accountBal}, Get back to work!`);
   } else if (accountBal >= 25) {
     document.getElementById("ol-mow");
