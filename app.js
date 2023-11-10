@@ -8,6 +8,10 @@ let tools = [
   { type: "old push-mower" },
 ];
 
+//Game Functions
+
+// Game Implementation:
+
 // cut with teeth function
 function teethCut() {
   if (money < 5) {
@@ -24,6 +28,7 @@ function teethCut() {
     // );
   }
 }
+
 // cut with scissors function
 function scissCut() {
   if (money < 25 && newTool === "rusty scissors") {
@@ -40,6 +45,26 @@ function scissCut() {
     );
   }
 }
+
+// cut with old-push-mower
+function olPushMow() {
+  if (money < 250 && newTool === "old push-mower") {
+    accountBal.splice(0, 1, (money += 50));
+    console.log(`You have earned ${money}! Keep up the good work!`);
+    // alert(`You have earned ${money}! Keep up the good work!`)
+  } else if (newTool !== "old push-mower") {
+    console.log("You don't have the tool! Keep on clipping!");
+    //alert("You don't have the tool! Keep on clipping!");
+  } else if (money === 250) {
+    console.log(
+      `You have earned ${money}! Proceed to the store for a upgrade!`
+    );
+    // alert(`You have earned ${money}! Proceed to the store for a upgrade!`)
+  }
+}
+
+// Purchase Functions:
+
 // buy scissors function
 function buySciss() {
   if (accountBal < 5) {
@@ -53,7 +78,8 @@ function buySciss() {
     // alert(`You got ${tools[1].type}! Now you can make more money!`);
   }
 }
-// old-mower
+
+// buy old push-mower
 function buyOlMow() {
   if (accountBal < 25) {
     console.log(`You only have ${accountBal}, Get back to work!`);
