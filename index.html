@@ -3,25 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css">
     <script src="app.js"></script>
     <title>Landscaper Game</title>
   </head>
   <body>
+    <div class="header">
+    <h1>Landscaper Game</h1>
+  </div>
+    <div class="content">
+      <div class="rules">
+        <p>
+          You have just started a landscaping business! But you have no money
+          for equipment! You're gonna have to start cutting with you teeth to
+          earn money for upgrades!
+        </p>
+      </div>
+      <div class="reset">
+        <button onclick="reset()">reset</button>
+      </div>
+    </div>
+  </div>
     <div class="choices">
-      <button onclick="teethCut()">Work for $1</button>
-      <button onclick="scissCut()">Work for $5</button>
-      <button onclick="olPushMow()">Work for $50</button>
+      <button id="teeth" onclick=""></button>
+      <button id="scissors" onclick=""></button>
+      <button id="p-mow" onclick=""></button>
+      <button id="b-mow" onclick=""></button>
+      <button id="students" onclick=""></button>
+    </div>
+    <div class="results">
+      <p id="result"></p>
     </div>
     <div class="store">
-        <div class="card">
-            <img src="" alt="">
-            <h3>Rusty Scissors</h3>
-            <button id="scissors" onclick="buySciss()">Buy: $5</button>
-        </div>
-        <div class="card">
-          <img src="" alt="">
-          <h3>Old Push-Mower</h3>
-          <button id="ol-mow" onclick="buyOlMow()">Buy: $25</button>
+      <div class="card">
+        <img src="" alt="" />
+        <h3>Rusty Scissors</h3>
+        <button id="rusty-scissors" onclick="">$5</button>
+      </div>
+      <div class="card">
+        <img src="" alt="" />
+        <h3>Old Push-Mower</h3>
+        <button id="ol-mow" onclick="">$25</button>
+      </div>
+      <div class="card">
+        <img src="" alt="" />
+        <h3>Battery Powered Mower</h3>
+        <button id="bat-mow" onclick="">$250</button>
+      </div>
+      <div class="card">
+        <img src="" alt="" />
+        <h3>Team of Students</h3>
+        <button id="students" onclick="">$500</button>
       </div>
     </div>
   </body>
