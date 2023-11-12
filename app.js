@@ -7,6 +7,7 @@ let tools = [
   { type: "rusty scissors" },
   { type: "old push mower" },
   { type: "battery powered mower" },
+  { type: "students" },
 ];
 
 // Results function
@@ -42,7 +43,7 @@ function reset() {
 //   }
 // }
 
-// cut with teeth function
+// Cut with teeth function
 function teethCut() {
   if (money < 5) {
     accountBal.splice(0, 1, (money += 1));
@@ -55,13 +56,11 @@ function teethCut() {
   }
 }
 
-// cut with scissors function
+// Cut with scissors function
 function scissCut() {
   if (money < 25 && newTool === "rusty scissors") {
     accountBal.splice(0, 1, (money += 5));
-    outcomeHandler(
-      `You have earned $${money} with the ${newTool}! Keep up the good work!`
-    );
+    outcomeHandler(`You have earned $${money}! Keep up the good work!`);
   } else if (newTool !== "rusty scissors") {
     outcomeHandler("You don't have the tool! Get to chomping!");
   } else if (money === 25) {
@@ -71,7 +70,7 @@ function scissCut() {
   }
 }
 
-// cut with old-push-mower
+// Cut with old-push-mower
 function olPushMow() {
   if (money < 250 && newTool === "old push mower") {
     accountBal.splice(0, 1, (money += 50));
@@ -87,13 +86,11 @@ function olPushMow() {
   }
 }
 
-//cut with battery mower
+// Cut with battery mower
 function battCut() {
   if (money < 500 && newTool === "battery powered mower") {
     accountBal.splice(0, 1, (money += 100));
-    outcomeHandler(
-      `You have earned $${money} with the ${newTool}! Keep up the good work!`
-    );
+    outcomeHandler(`You have earned $${money}! Keep up the good work!`);
   } else if (newTool !== "battery powered mower") {
     outcomeHandler("You don't have the tool! Keep on pushing!");
   } else if (money === 500) {
@@ -102,9 +99,24 @@ function battCut() {
     );
   }
 }
+
+// Cut with team of students
+function teamCut() {
+  if (money < 1000 && newTool === "students") {
+    accountBal.splice(0, 1, (money += 250));
+    outcomeHandler(`You have earned $${money} cutting lawns today!`);
+  } else if (newTool !== "students") {
+    outcomeHandler(`You don't have this ${newTool}, get back to work!`);
+  } else if (money === 1000) {
+    outcomeHandler(
+      `You have earned ${money} and won the game! Thanks for playing!`
+    );
+  }
+}
+
 // Purchase Functions:
 
-//buy scissors function
+// Buy scissors function
 function buySciss() {
   if (accountBal < 5) {
     outcomeHandler(`You only have $${accountBal}, Get back to work!`);
@@ -120,7 +132,7 @@ function buySciss() {
   }
 }
 
-// buy old push-mower
+// Buy old push-mower
 function buyOlMow() {
   if (accountBal < 25) {
     outcomeHandler(`You only have $${accountBal}, Get back to work!`);
@@ -134,7 +146,7 @@ function buyOlMow() {
   }
 }
 
-//buy battery mower
+// Buy battery mower
 function buyBatMow() {
   if (accountBal < 250) {
     outcomeHandler(`You only have $${accountBal}, Get back to work!`);
@@ -144,6 +156,20 @@ function buyBatMow() {
     newTool = tools[3].type;
     outcomeHandler(
       `You got the ${tools[3].type}! Now you can make more money!`
+    );
+  }
+}
+
+// Buy team of students
+function buyTeam() {
+  if (accountBal < 500) {
+    outcomeHandler(`You only have $${accountBal}, Get back to work!`);
+  } else if (accountBal <= 500) {
+    document.getElementById("students");
+    accountBal.splice(0, 1, (money -= 500));
+    newTool = tools[4].type;
+    outcomeHandler(
+      `You got a team of ${tools[4].type}! Now you can make more money!`
     );
   }
 }
