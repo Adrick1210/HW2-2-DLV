@@ -1,6 +1,6 @@
 // variables and objects
 const tools = [
-  { type: " teeth", pay: 1, cost: 0 },
+  { type: "teeth", pay: 1, cost: 0 },
   { type: "rusty scissors", pay: 5, cost: 5 },
   { type: "a old push mower", pay: 50, cost: 25 },
   { type: "a new battery mower", pay: 100, cost: 250 },
@@ -56,11 +56,11 @@ function newTool() {
 
 // Calls to user that a upgrade is available
 function canUpgrade() {
-  const upgradeCost = tools[landscape.tool + 1];
-  if (landscape.money >= upgradeCost.cost && landscape.tool !== tools[4].type) {
-    outcomeHandler(
-      `A new upgrade is available!`
-    );
+  if (landscape.tool + 1 < tools.length) {
+    const upgradeCost = tools[landscape.tool + 1];
+    if (upgradeCost.cost <= landscape.money) {
+      outcomeHandler(`You have made $${landscape.money}! A new upgrade is available!`);
+    }
   }
 }
 
