@@ -1,70 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Anton&display=swap");
+
 body {
-  background-image: url("https://www.montgomerycountymd.gov/lawns/Resources/Images/123rf/lawn-mower-Kurhan-123RF-Stock-Photo.jpg");
+  background-image: url("https://www.thespruce.com/thmb/9xGU6gMlp4nXULGzeg5VnWk21UI=/2163x0/filters:no_upscale():max_bytes(150000):strip_icc()/mower-w-operator-behind-big-59473bc15f9b58d58abae59b.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 1900px;
+  background-repeat: no-repeat;
 }
+
 .header {
   text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
+  color: cornsilk;
 }
+
 .content {
   display: flex;
   justify-items: center;
   justify-content: space-evenly;
-  gap: 40px;
+  margin-top: 50px;
+  gap: 10px;
 }
 
 .rules {
   margin: 0;
   padding: 0;
   max-width: 40%;
-  border: 5px solid lightseagreen;
+  border: 2px solid lightseagreen;
+  background-color: aliceblue;
+  font-size: 17px;
 }
 
 .reset button {
   margin: 0;
   padding: 0;
-  margin-top: 45px;
-  border: 5px solid lightseagreen;
+  margin-top: 20px;
+  margin-right: 100px;
+  border: 2px solid lightseagreen;
+  background-color: aliceblue;
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
 }
 
-.choices {
-  margin-top: 60px;
+.game {
   display: flex;
   justify-content: center;
-  gap: 70px;
-}
-#teeth {
-  background-image: url("https://www.gagworks.com/cdn/shop/products/chatter_teeth2_1024x1024.png?v=1668964874");
-  background-size: cover;
-  width: 200px;
-  height: 200px;
+  gap: 100px;
 }
 
-#scissors {
-  background-image: url("https://img.freepik.com/premium-photo/antique-scissors-isolated-white-background-with-clipping-path_625448-1222.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699142400&semt=ais");
-  background-size: cover;
-  background-position: center;
-  width: 200px;
-  height: 200px;
+#start {
+  margin-top: 100px;
+  margin-right: 100px;
+  border: 2px solid lightseagreen;
+  background-color: aliceblue;
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
 }
 
-#p-mow {
-  background-image: url("https://assets.leevalley.com/Size4/10026/PA812-lee-valley-14-inch-mower-f-34.jpg");
-  background-size: cover;
-  width: 200px;
-  height: 200px;
+#upgrade {
+  margin-top: 100px;
+  margin-right: 100px;
+  border: 2px solid lightseagreen;
+  background-color: aliceblue;
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
 }
 
-#b-mow {
-  background-image: url("https://m.media-amazon.com/images/I/516R2D3tovL.jpg");
-  background-size: cover;
-  width: 200px;
-  height: 200px;
-}
-
-#students {
-  background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxANEA0NDRAPDQ0ODQ4RDxAPDQ8ODxAVFxEWGBUVExYYHSogGBomJxUVIzEiJSkrLi4uFx8zOzMsNyotMCsBCgoKDQ0NDw0PFS0ZFRktKystLS0rNysrLSsrLTcrKysrKys3LSsrKysrLSsrKysrKysrKysrKysrKy0rKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEBAAIDAQEAAAAAAAAAAAAAAQcIBAUGAwL/xAA9EAACAgECAwUFBQYEBwAAAAAAAQIDBAURBhIhBzFBUWETInGBkRQyQlKhFSNygpKxCFNisiRDk5SiwdH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAMAwEAAhEDEQA/AM4FIAKCACgAACFAAgAoIAKCACggAoIAKCFAAhQAIUACFAAhQAIAKCFAAEAoAAAhQAIUACACggAoIAKCACghQAIUACFAAhQAIUACACggAoIAKCFAAhQAIAKQACkAAoIABSAAUhQAIUACFAAhQAIUACACggApAABSFAA6Di3i7D0er2uZZyuW/s6oLmuta/LHy9X0MT5/b5a5P7PgVxrTezuvlKbW/RtRSS+HX4gZ3BhjQO3iqc1DUMR0Qf8AzqLHbGPxg0nt8G/gZd07Pqyqq8jHshdTYt4Tg94tAcogI3sBQY04z7YsLT5SoxI/tDJi2pck1DHg152bPmfpFeHejGWodtOsWybqnj40d3tGvHjPZb9N3Zvv+gGzANY8Ttl1qt7yuovX5bMWtL/w5X+pkPhLtuxcmUadRq+wzfRXRm7Mdvp97pvD9V07wMslPnVbGcYzg1OMknGUWpRkn3NNd6P2AKfO+6NcZWWSjCEE5SlJqMYpd7bfcjE3E3bljUTlVp9DzXFtO6c3TTv/AKfdcpr16AZdBgTG7fMhS/e4FEo+KhkWQl9XF/2Mo8F8e4WtRaxpOvIit549u0bYrzXhKPqgPVAhQAIUAAAAIUAAABCgCHG1PNhi035Nr5aqKrLZvyjCLk/7HKPKdqal+xtU5e/7LL6cy5v03A1i4p4gu1XKuzciTcrJe5HduNUF92EV4Jfq934nUgFQMm9hnFk8PNjp9km8TOk4qLbaru292S8ubblf8vkYyO24T3+36dy/e+34m3/WiBuO2YO7bu0KanZo+DNwUVtmWwbTba39jFrw2fvfHbzMvcUaqsDCzMx9fs+PZZFeclH3V83sjTnIulbOdljc7LJynOT75Sk92382wr5gArIAAMo9jfaFPAur03Lm5YN81Gpybf2ayT6beUG31Xg3v5mxiZpEbZdlutvUdKw77HzWwg6bX4uVb5d38Uk/mZaY2/xBcWT9pDR6ZONShG3K2e3tG3vXW/Rbc3xa8jCx7Htf3/bepc3f7Wrb4exhtseORU1TlaXqFuJdTk485V3UzjOEotrZp9z270+5rxTZxQEbicH65HU8LFzodPb17zj+WcW4zj8mmdyY57A1L9jQ5u77Vk8vw5l/73MjEaAAAAAAAAAAAIUAQ4+fiQyKrse1c1V1U67F5xlFpr9TkHRa9xhp2nPlzMummzp+75ue3r3NwjvJL12A1Z4u4cu0nLuw70/cbddmz5ba392cX4+vk90dKbe67oOBruNBXxryaZrnouqn70d196ucf7dz8UYwz+wLeTeLn7VvfaN2PzSX80ZLf6FRhEyl2F8JWZeZHU7Y7YmHKTrk+itu22Sj5qO+7fny+p6vQOwjGqlGefk2ZaT61VQ+z1y6d0pbuW3waMh6rrGn6Jj1K+dOFjx5YVVxW3ptCEer28dkCOk7a5yWiZ/L4+wT+DuhuatG3/Gum/tHTc7Gq2lK/Fl7JrqpSS5obbebSNQZLq01s/FeQw1AAVAAEA2J/wAO05PTclP7sc+zl/6de5rsbS9jWkyw9HxFNctmQ55DXVPax7w7/wDSojVx4f8AxA8I2SlDWMeLnBVxqy0urhs/3dm3l15X5bR9TCRuHpfEWDqE8nGx76r7KJzqvq8enSXuv70e9brdHhOJuxDCyZytwbZ4EpdXXy+2o33bfLFtOPf3J7eSQGu5zdH0u7OvpxcaDsuumowS32XXq5Pwiu9vwRl3F7AZ8y9tqEfZ+Ps8Z87+G8tkZM4R4LwNDrm8aG1jj+9yLpc1kkuvWT6Rj6LZAjseE9EhpmFi4NfVUVKLl+ab6zl822ztzzmk8caZmWSox83HncpuKg7FBza/y+bbnXrHc9FuRVAAAAAAABAUAQ+WVkwphO22Ua6q4uU5yajGKXe2z7GDf8QvE81KnSKpOMHCN+Tt+P3v3UH6Llcv6QOp7Qe2G/LlPG0pyxcTrF3reORcvOPjXH9fVdxiudjk3KTcpN7uUm22/Nt95CFR33DXGOfpT3wsidcG95VS/eUy+MJdE/VbM9/idvWZGKV2HjWyS6yhZZUn8upiIAZS1bty1G6LjjU42JuvvJSumvVc3RfRmOdV1W/Nsd+XdZkWy752Tcnt5LwS9Ec7hjhXM1az2WDS7Nmuexvkqr9ZzfRfDq/Qzfwn2KYWLy2ajJ59668nWvGj/L3z+b29AOy7FOJ/2jp0KLG3k4HLTPd7uUEv3c/p0frFmM+2rgaWBkz1HHg3g5U3KfKt1j2vq1LyjJ7tPzbXkZzz9V07RqoxusxcCmK9yuKhX0XhCuC3fwSPxo2u6frmPb9nnXl0PmrurnBp7dVtOE1vs/DdEVqAwZr4z7EJc079Hsi4vd/ZbpcrXpXZ3bekvqY01DgfVcaXLbp+Wn16wpldH+qvdFR58HeYfB2p3y5atPzG/wDVjWVx/qkkjIPCfYhk2yjbqs1i1J7uiqUbL5de5yW8YfLcDy/ZdwTPWcqLnGSwKJRlk2bbRls91TF+Mpfot/Qz/wBofEcdG066+Oyt5fY40VslzyW0flHv/lOZdfp+gYa5vZ4WHQtoxS6yb8El1nN/Vn50bifTdXg4Y2RRlKS96ma2nt1XvVTSfg/AitScXNtpsjfVZZXfGTkrYTlGxN975l1Mh6J216pjpQyI0ZsV+KyDrtfxlDo/oZK4r7HdOzuaeLH9nZD32dEV7Bv/AFVdyX8Oxg/jDgfO0aX/ABVW9De0Miv36Z+W774v0e3zKj3d/b5lNNV4OPCW3Ryusmvokv7nhuJ+P9S1VOGVkNUv/kUr2NPd+JLrL+Zs8yAG/wChkPgPtXzNMlCnKlPOwe5xnJu6pedc33pflflstjHZQNz9G1ajOoqysWxW0Wx5oyX6prvTXc0+45xrl2C8Tzxc79nTk3jZ3M4x8IXRjupL+JR5X8I+RsaRQAAQoAEBQBDWTt3qlDWbnLfazHxpw9Y8nL0+cZL5Gzh5jjjgjF1yqFeTzV21Num+vb2le/euvSUXst0/0A1IBkriDsW1TFcpYvss+pP3fZy9ndt6wn0+kmeD1LR8rDe2Vj343Xb99TOtb+W7WxUcEyB2YdnFmsz+0ZDlTp0JbSmtlO9rvhV5JeMvp17uo7OuEpa1m14/WOPXtZlTW/u1pr3U/CUu5fN+Bsnr+sYmgYHtZxVdFEI10U1pJze20K4Lzfn8WB+779P0DDTl7LCw6VtGMV95+iXWc382zC3GfbRl5TlTpi+w4/d7VpPKn6790F6Ld+p4Xi/inJ1jIlk5cu7dU1J/u6Yt/dgvpu+9nRsFfTIyJ2ylZbOVtknvKdkpTnL4yfVnK0bWMjAujk4ds6Lo/ig9t1+WS7pR9GcEBGceGe3ZbRhquM+ZbJ34q3i/WVcnuvk38F3HucLtT0W5JrOhW3+G2u2pr47x2/U1VYEWtrsrtO0WpbvPql07q42Wt/0xPGcR9utEIyhpmPO+zqo25C9lSvXkT5pfD3TAgBXb8S8TZeqXe3zbpWyW/JH7tVa8q4LpH+7OqhNxalFuMk01JNqSa7mmu4/IQGR+Du1/P09wqy29QxVsmrZf8RBbfgs8fhLf4ozroHEGBr2NKVLhkVSjyX0WwTlDddY2Qf8AfqjUM7DQdayNOvhl4djquh4rrGS8YzX4ovyBWRe1XssenKefpylZg991TfNPG85J+Nf6r1Xdio2z4B4xo13F9rGKhdD3Mqh+9yNrw374S8H8V4GCu17glaPl+1oW2BlOUqUt9qZrbnqb8vFej28APAg5WBp9+VLkxqbciW6TVNU7Gt+7flXQ9voHY/q2W4ytrhg1treWTPae3pXHd7+j2BHS9mdUrNX0uMOsvtcJdPyxTlJ/RM23PFcAdnGLonNbGUsnLnHllfYkuWPTeNcV91Pb1fqe1IqFAAgKAICgCAoAhJRTWzSafg1uj9EA4+PgU0ucqaqqpT25nXXGDlt3c2y695rX21cUS1DUbMeEt8XAlKmCXc7O62f1XL/KbMZVnJXZNd8YTkvkmzSq66Vkp2T6ysnKcn5uT3f9wmvmCkZpAAAAGAAAAABAAgEB6fs54nlpGoUZPM1RNqrJj4Sqk1u3/D0l8ja/IxKr4xVtdd0U+aKshGaT26NJ+PXvNKWbg8CZcr9M0y6b3nPCx3J+b5En/YmrjuqqowSjCMYRXcoxUUvkj9bFBFQoAEKABAUAQFAEBSAACgfPIr54Th+eEo/VbGl+qYM8S+/GtTjZRbOuSa2e8ZNb/pubqGMe1PsvWrS+24UoU5yilZGfSvISXTd/hmu7fxXeBreDtNd4ezNOn7PNx7cdt7Rc4+5L+Ga92XyZ1ZWQAAAGCgACAAEUAgc/RtGyc+fssKi3Js6bquDajv4yfdFdPFkHChFyajFOUm0opJttvokl4m4vCWnSw8DBxZ/foxaYS/iUFzfruY37MeyR4VtefqjhPIr96nHg+eFUvCc5fikvBLovUy+iNIUACFAAhQAICgCAFAgKQAUhQIUAD530RtjKFkY2QktnGcVKL+KZ4jWuyTSMvmksd4lj/Hi2Ov8A8HvD9D3YAwbq3YHLq8POT6dIZNO3X1nDu/pPMZvYtrFW/JHGyNv8rJ23+HPGJswANTb+zbWq/vafe/4HXb/tkzhy4I1Zd+m53/a2v/0bfAtGoMeCNVfdpud/2lv/AMOXj9m+s2fd0/IX8fJV/vkjbMCjWTB7GNZt2c68fH3/AM3Jj0+PIpHptK7A7Xs83Orh+aGNVKf0nPb/AGmdWEQY/wBF7HtIxeWVlU8ya/Fk2c0f6I7R+qZ7vExK6IKumuFVce6FcIwivgkfUoEKABCgAQoAEKABAUAQAoEBSACkKAAAAhQBAAAAAAAAAAAKQoEKABCgAQoAAAAQoAAEKAAIBQQoAAAAAABABQQAUEAFBABQQqAAAAAAAAAAAAAAAIAKCACghQAAAAEAoIAKCACggAoIAKCFQAEKABCgAQoAAAAQoEAAAAAAgAARQBAAAAAAAAAAAAAAqAAhQAIUACFYAEDKAIAAP//Z");
-  background-size: cover;
-  width: 200px;
-  height: 200px;
+.results {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-family: "Anton", sans-serif;
+  font-size: 32px;
+  color: cornsilk;
 }
