@@ -23,7 +23,7 @@ function outcomeHandler(string) {
 const reset = () => {
   landscape.money = 0;
   landscape.tool = 0;
-  result = "";
+  result = "Play or Upgrade?";
   document.querySelector("#result").innerHTML = result;
 };
 
