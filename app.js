@@ -32,6 +32,7 @@ function gameStart() {
   const tool = tools[landscape.tool];
   landscape.money += tool.pay;
   outcomeHandler(`You made $${landscape.money} using ${tool.type}!`);
+  canUpgrade();
   winGame();
 }
 
@@ -53,10 +54,20 @@ function newTool() {
   }
 }
 
+// Calls to user that a upgrade is available
+function canUpgrade() {
+  const upgradeCost = tools[landscape.tool + 1];
+  if (landscape.money >= upgradeCost.cost && landscape.tool !== tools[4].type) {
+    outcomeHandler(
+      `A new upgrade is available!`
+    );
+  }
+}
+
 // Win conditions for game
 function winGame() {
-  if (landscape.tool === tools.length - 1 && landscape.money >= 1000) {
-    outcomeHandler(`You have won the game!`);
+  if (landscape.tool === tools.length - 1 && landscape.money === 1000) {
+    outcomeHandler(`You have made $${landscape.money} You have won the game!`);
     landscape.wonGame = true;
   }
 }
