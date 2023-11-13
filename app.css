@@ -3,14 +3,15 @@
 body {
   background-image: url("https://www.thespruce.com/thmb/9xGU6gMlp4nXULGzeg5VnWk21UI=/2163x0/filters:no_upscale():max_bytes(150000):strip_icc()/mower-w-operator-behind-big-59473bc15f9b58d58abae59b.jpg");
   background-position: center;
-  background-size: 1900px;
+  background-size: 2200px;
   background-repeat: no-repeat;
 }
 
 .header {
   text-align: center;
   font-family: "Anton", sans-serif;
-  font-size: 25px;
+  text-shadow: 1px 1px 2px black;
+  font-size: 50px;
   color: cornsilk;
 }
 
@@ -18,7 +19,7 @@ body {
   display: flex;
   justify-items: center;
   justify-content: space-evenly;
-  margin-top: 50px;
+  margin-top: 100px;
   gap: 10px;
 }
 
@@ -31,9 +32,11 @@ body {
   font-size: 17px;
 }
 
-.reset button {
-  margin: 0;
-  padding: 0;
+.rules p {
+  margin-left: 10px;
+}
+
+button {
   margin-top: 20px;
   margin-right: 100px;
   border: 2px solid lightseagreen;
@@ -44,32 +47,18 @@ body {
   height: 50px;
 }
 
+#start {
+  margin-top: 150px;
+}
+
+#upgrade {
+margin-top: 150px;
+}
+
 .game {
   display: flex;
   justify-content: center;
   gap: 100px;
-}
-
-#start {
-  margin-top: 100px;
-  margin-right: 100px;
-  border: 2px solid lightseagreen;
-  background-color: aliceblue;
-  font-family: "Anton", sans-serif;
-  font-size: 20px;
-  width: 100px;
-  height: 50px;
-}
-
-#upgrade {
-  margin-top: 100px;
-  margin-right: 100px;
-  border: 2px solid lightseagreen;
-  background-color: aliceblue;
-  font-family: "Anton", sans-serif;
-  font-size: 20px;
-  width: 100px;
-  height: 50px;
 }
 
 .results {
@@ -77,6 +66,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: "Anton", sans-serif;
-  font-size: 32px;
-  color: cornsilk;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px black;
+  color:cornsilk;
 }
