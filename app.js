@@ -59,7 +59,9 @@ function canUpgrade() {
   if (landscape.tool + 1 < tools.length) {
     const upgradeCost = tools[landscape.tool + 1];
     if (upgradeCost.cost <= landscape.money) {
-      outcomeHandler(`You have made $${landscape.money}! A new upgrade is available!`);
+      outcomeHandler(
+        `You have made $${landscape.money}! A new upgrade is available!`
+      );
     }
   }
 }
@@ -69,5 +71,6 @@ function winGame() {
   if (landscape.tool === tools.length - 1 && landscape.money === 1000) {
     outcomeHandler(`You have made $${landscape.money} You have won the game!`);
     landscape.wonGame = true;
+  } else {
   }
 }
