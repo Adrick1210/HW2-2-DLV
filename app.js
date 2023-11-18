@@ -68,7 +68,10 @@ function canUpgrade() {
 
 // Win conditions for game
 function winGame() {
-  if (landscape.tool === tools.length - 1 && landscape.money === 1000) {
+
+// by changing this to greater than or equal the game will end if the total exceeds 1000
+  if (landscape.tool === tools.length - 1 && landscape.money >= 1000) { 
+
     outcomeHandler(`You have made $${landscape.money} You have won the game!`);
     landscape.wonGame = true;
   }
